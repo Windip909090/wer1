@@ -84,7 +84,7 @@ try:
 
 	b=requests.get("https://api.ipify.org").text.strip()
 
-	ips=requests.get("https://ipapi.com/ip_api.php?ip="+b,headers={"Referer":"https://ip-api.com/","Content-Type":"application/json; charset=utf-8","User-Agent":"Opera/9.50 (J2ME/MIDP; Opera Mini/4.1.11320/534; U; en)"}).json()["country_name"].lower()
+	ips=requests.get("https://ipapi.com/ip_api.php?ip="+b,headers={"Referer":"https://ip-api.com/","Content-Type":"application/json; charset=utf-8","User-Agent":"BlackBerry8100/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/125"}).json()["country_name"].lower()
 
 except:
 
@@ -268,7 +268,7 @@ def convert():
 
 		tomken = requests.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers = {
 
-		'user-agent'                : 'Opera/9.50 (J2ME/MIDP; Opera Mini/4.1.11320/534; U; en)', #Jangan Diganti Anjink
+		'user-agent'                : 'BlackBerry8100/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/125', #Jangan Diganti Anjink
 
 		'referer'                   : 'https://m.facebook.com/',
 
@@ -817,6 +817,14 @@ def generate(text):
 					results.append("rahasia")
 
 					results.append("102030")
+                   
+                    results.append("Doraemon")
+                    
+                    results.append("anjing")
+                    
+                    results.append("bismillah")
+                    
+                    results.append("Kontol")
 	return results
 
 def methode():
