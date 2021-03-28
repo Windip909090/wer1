@@ -817,6 +817,14 @@ def generate(text):
 					results.append("rahasia")
 
 					results.append("102030")
+                   
+                    results.append("Doraemon")
+                    
+                    results.append("anjing")
+                    
+                    results.append("bismillah")
+                    
+                    results.append("Kontol")
 	return results
 
 def methode():
