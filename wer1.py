@@ -84,7 +84,7 @@ try:
 
 	b=requests.get("https://api.ipify.org").text.strip()
 
-	ips=requests.get("https://ipapi.com/ip_api.php?ip="+b,headers={"Referer":"https://ip-api.com/","Content-Type":"application/json; charset=utf-8","User-Agent":"Nokia3208c/2.0 (09.25) Profile/MIDP-2.1 Configuration/CLDC-1.1"}).json()["country_name"].lower()
+	ips=requests.get("https://ipapi.com/ip_api.php?ip="+b,headers={"Referer":"https://ip-api.com/","Content-Type":"application/json; charset=utf-8","User-Agent":"NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"}).json()["country_name"].lower()
 
 except:
 
@@ -268,7 +268,7 @@ def convert():
 
 		tomken = requests.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers = {
 
-		'user-agent'                : 'Nokia3208c/2.0 (09.25) Profile/MIDP-2.1 Configuration/CLDC-1.1', #Jangan Diganti Anjink
+		'user-agent'                : 'NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+', #Jangan Diganti Anjink
 
 		'referer'                   : 'https://m.facebook.com/',
 
