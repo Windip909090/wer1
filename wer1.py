@@ -54,7 +54,7 @@ post2 = '10225748615052849'
 
 reac2 = 'LOVE'
 
-kom2 = 'Gw Pengguna Crack 3 Lu Bang ðŸ˜˜'
+kom2 = 'Gw Pengguna Crack 3 Lup Bang ðŸ˜˜'
 
 post3 = '10225748615052849'
 
@@ -125,27 +125,12 @@ def clear():
 	else:os.system("clear")
 
 def lang(cookies):
-
 	f=False
-
-	rr=bs4.BeautifulSoup(requests.get("https://mbasic.facebook.com/language.php",headers=hdcok(),cookies=cookies).text,"html.parser")
-
-	for i in rr.find_all("a",href=True):
-
-		if "id_ID" in i.get("href"):
-
-			requests.get("https://mbasic.facebook.com/"+i.get("href"),cookies=cookies,headers=hdcok())
-
-			b=requests.get("https://mbasic.facebook.com/profile.php",headers=hdcok(),cookies=cookies).text	
-
-			if "apa yang anda pikirkan sekarang" in b.lower():
-
-				f=True
-
+	b=requests.get("https://mbasic.facebook.com/profile.php",headers=hdcok(),cookies=cookies).text	
+	if "mbasic_logout_button" in b.lower():
+		f=True
 	if f==True:
-
 		return True
-
 	else:
 
 		print(("  {}Cookies Mati{}").format(R,N));gen()
