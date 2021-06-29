@@ -84,7 +84,7 @@ def jalan(z):
 		sys.stdout.write(e)
 		sys.stdout.flush()
 		time.sleep(0.03)
- LICENSE 
+ #LICENSE# 
 def license():
     try:
         toket = open('licensed.log', 'r').read()
