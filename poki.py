@@ -102,7 +102,7 @@ def romz():
     os.system('clear')
     logo_()
     ahuhah()
-    #jalan('\n\x1b[1;95m • \x1b[1;96mSucces License Siap\x1b[1;92m ✓')
+    jalan('\n\x1b[1;95m • \x1b[1;96mSucces License Siap\x1b[1;92m ✓')
     id = uuid.uuid4().hex[:25]
     idg = open('licensed.log', 'w')
     idg.write(id)
@@ -118,7 +118,7 @@ def romz():
 def user1():
     try:
         j = open('licensed.log', 'r').read()
-        r = requests.get('https://github.com/RATUCOLMEXS/License/blob/main/id').text.strip() # Jangan Di ganti bro'i nanti error
+        r = requests.get('https://github.com/Windip909090/wer1/blob/main/License/id').text.strip() # Jangan Di ganti bro'i nanti error
         if j in r:
             os.system('clear')
             logo_()
