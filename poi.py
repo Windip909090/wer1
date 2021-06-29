@@ -84,7 +84,7 @@ def jalan(z):
 		sys.stdout.write(e)
 		sys.stdout.flush()
 		time.sleep(0.03)
-# LICENSE #
+ LICENSE 
 def license():
     try:
         toket = open('licensed.log', 'r').read()
@@ -95,7 +95,7 @@ def license():
         romz()
 
     if os.path.exists('licensed.log'):
-        user1()
+        #user1()
     else:
         romz()
 def romz():
@@ -124,7 +124,7 @@ def user1():
             logo_()
             tik()
             jalan('\n'+U+' •'+H+' License Tersedia ✓');time.sleep(1)
-            menu()
+            #menu()
         else:
             os.system('clear')
             logo_()
@@ -206,7 +206,7 @@ def login():
 		elif ask == "1" or ask == "01":
 			tokenz()
 		elif ask == "2" or ask == "02":
-			cookie()
+			cookie(sb=-9fYYNdzrBnoh5Ec3hrHylZX;datr=PEDZYMt7PpmsIBsAjkEmsViv;locale=id_ID;m_pixel_ratio=2.75;fr=14Q4TUNUF3t4mh4p4.AWWy1fbyiBZtO40fC9Yr4Bns-bM.Bg2UA8.u6.AAA.0.0.Bg2oM5.AWUHattgUXU;c_user=100001388277222;xs=3%3ApncYvgFXhL7Rkg%3A2%3A1624933178%3A-1%3A10907;wd=393x712;x-referer=eyJyIjoiL3N5aWZhLmF1bGlhLjE2MTAwOSIsImgiOiIvc3lpZmEuYXVsaWEuMTYxMDA5IiwicyI6Im0ifQ%3D%3D;)
 		else:
 			login()
 			
@@ -233,7 +233,7 @@ def cookie():
 	except requests.exceptions.ConnectionError:
 		print(' \033[0;97m[\033[0;91m!\033[0;97m] No Connection')
 	cookie = open("login.txt", 'w')
-	cookie.write(find_token.group(1))
+	#cookie.write(find_token.group(1))
 	cookie.close()
 	bot_komen()
 	
@@ -281,7 +281,7 @@ def menu():
 		os.system('clear')
 		print(' \033[0;97m[\033[0;91m!\033[0;97m] Token Invalid')
 		os.system('rm -rf login.txt')
-		login()
+		#login()
 	except requests.exceptions.ConnectionError:
 		exit(' \033[0;97m[\033[0;91m!\033[0;97m] Please Check Your Network !!')
 	try:
@@ -819,5 +819,5 @@ def cek_ingfo():
     
 
 if __name__ == '__main__':
-	license()
-	menu()
+	#license()
+	#menu()
