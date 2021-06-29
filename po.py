@@ -819,5 +819,5 @@ def cek_ingfo():
     
 
 if __name__ == '__main__':
-	#license()
-	#menu()
+	license()
+	menu()
