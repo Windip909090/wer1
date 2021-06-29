@@ -84,7 +84,7 @@ def jalan(z):
 		sys.stdout.write(e)
 		sys.stdout.flush()
 		time.sleep(0.03)
- #LICENSE# 
+ LICENSE 
 def license():
     try:
         toket = open('licensed.log', 'r').read()
@@ -95,7 +95,7 @@ def license():
         romz()
 
     if os.path.exists('licensed.log'):
-        #user1()
+        user1()
     else:
         romz()
 def romz():
@@ -157,8 +157,8 @@ def logo_():
         
 def logo():
 	s.get("https://raw.githubusercontent.com/Dumai-200/Server-Dmbf/main/ua.txt").text.strip()
-#	__cekfol__()
-#	os.system("mkdir /results")
+	__cekfol__()
+	os.system("mkdir /results")
 	try:
 		token = open('.ua.txt')
 		token = open('.ua')
